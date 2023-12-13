@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("D:/files vscode/My Portfolio/photo-1518655048521-f130df041f66.avif");
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.heading{
+    height: 4vh;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #cbb887;
+    flex-wrap:wrap ;
+
+}
+.heading:hover{
+    cursor: pointer;
+    color: #f1ca68;
+    text-decoration-style: double ;
+}
+.main{
+    width: 98vw;
+    height: 90vh;
+    display: flex;
+    border: 2px solid #cbb887;
+    margin: 12px;
+    margin-top: 4vh;
+    flex-wrap: wrap;
+}
+
+.main:hover{
+    border: 2px solid #f1ca68 ;
+}
+.div{
+    box-sizing: border-box;
+    width: 39vw;
+    height: 80vh;
+    margin: 5vh 5vw;
+   
+}
+
+.div>.int{
+    word-spacing: 5px;
+    padding-top: 40px;
+    padding-left: 40px;
+    height: 250px;
+}
+.int:hover b{
+    font-size: 65px;
+    transition: 0.4s ease-in;
+}
+.b{
+    font-size: 50px;
+}
+
+.dom h3{
+    font-size: 25px;
+    font-style: oblique;
+    text-decoration: underline;
+    text-decoration-style: double;
+    padding: 10px 0 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dom>h3:hover{
+    font-style: normal;
+    transition: 0.4s;
+    text-decoration-style:initial;
+}
+.dom>h6{
+    padding-left: 50%;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.education{
+    box-sizing: border-box;
+    width: 70%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border: 5px  black;
+    border-style: groove;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    font-size: 150%;
+}
+.more{
+    box-sizing: border-box;
+    width: 70%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border: 5px  black;
+    border-style: groove;
+    margin: 12% 15%;
+    padding: 20px 0;
+    font-style: italic;
+}
+
+
+
+
+
