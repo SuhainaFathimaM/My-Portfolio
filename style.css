@@ -6,7 +6,7 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-image: url("D:/files vscode/My Portfolio/photo-1518655048521-f130df041f66.avif");
+    background-image: url("./photo-1518655048521-f130df041f66.avif");
     background-size:cover;
     display: flex;
     flex-direction: column;
