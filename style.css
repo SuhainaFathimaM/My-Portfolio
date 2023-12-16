@@ -2,123 +2,144 @@
     margin: 0;
     padding: 0;
     user-select: none;
-}
-body{
-    height: 100vh;
-    width: 100vw;
-    background-image: url("photo-1518655048521-f130df041f66.avif");
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
 }
-.heading{
-    height: 4vh;
-    display: block;
+body{
+    background-image: url("photo-1518655048521-f130df041f66.avif");
+    background-size:cover;
+}
+.heading{   
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
     color: #cbb887;
-    flex-wrap:wrap ;
-
+    font-size: 2rem;
+    padding: 1rem;
 }
 .heading:hover{
     cursor: pointer;
     color: #f1ca68;
-    text-decoration-style: double ;
+    text-decoration-style: double;
 }
 .main{
-    width: 98vw;
-    height: 90vh;
-    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
     border: 2px solid #cbb887;
-    margin: 12px;
-    margin-top: 4vh;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2,1fr);
 }
-
 .main:hover{
-    border: 2px solid #f1ca68 ;
+    border: 2px solid #f1ca68;
+    transition: 2s;
 }
-.div{
-    box-sizing: border-box;
-    width: 39vw;
-    height: 80vh;
-    margin: 5vh 5vw;
-   
-}
-
-.div>.int{
+.int{
+    padding: 2rem;
     word-spacing: 5px;
-    padding-top: 40px;
-    padding-left: 40px;
-    height: 250px;
+    grid-row: 1;
+}
+.int h1{
+    font-size: 1.5rem;
 }
 .int:hover b{
-    font-size: 65px;
+    font-size: 2rem;
     transition: 0.4s ease-in;
 }
 .b{
-    font-size: 50px;
+    font-size: 1.8rem;
 }
-
+.dom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    grid-row: 2;
+}
 .dom h3{
-    font-size: 25px;
+    font-size: 1.2rem;
     font-style: oblique;
     text-decoration: underline;
     text-decoration-style: double;
-    padding: 10px 0 20px 40px;
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
-.dom>h3:hover{
+h3:hover{
     font-style: normal;
     transition: 0.4s;
-    text-decoration-style:initial;
 }
-.dom>h6{
-    padding-left: 50%;
-    font-size: 20px;
-    padding-bottom: 20px;
-}
-.education{
-    box-sizing: border-box;
-    width: 70%;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px;
-    border: 5px  black;
-    border-style: groove;
-    margin-left: 15%;
-    margin-bottom: 30px;
-    padding: 20px 0;
-    font-style: italic;
+h6{
+    font-size: 1rem;
 }
 a{
     text-decoration: none;
     color: black;
 }
 a:hover{
-    font-size: 150%;
+    font-size: 1.5rem;
 }
 .more{
-    box-sizing: border-box;
-    width: 70%;
-    height: 20%;
+    margin: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 35px;
+    font-size: 1.2rem;
     border: 5px  black;
     border-style: groove;
-    margin: 12% 15%;
-    padding: 20px 0;
     font-style: italic;
+    padding: 1rem;
+}
+@media only screen and (max-width:600px)
+{
+    .main{
+        grid-template-columns: 1fr;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .int h1{
+        font-size: 1.2rem;
+    }
+    .int:hover b{
+        font-size: 1.5rem;
+    }
+    .b{
+        font-size: 1.2rem;
+    }
+    .dom h3{
+        font-size: 1rem;
+    }
+    .h6{
+        font-size: 0.8rem;
+    }
+    .more{
+        font-size: 1rem;
+    }
 }
 
-
-
+@media only screen and (min-width:601px) and (max-width:900px)
+{
+    .heading{
+        font-size: 1.8rem;
+    }
+    .int h1{
+        font-size: 1.4rem;
+    }
+    .int:hover b{
+        font-size: 1.8rem;
+    }
+    .b{
+        font-size: 1.6rem;
+    }
+    .dom h3{
+        font-size: 1.1rem;
+    }
+    .h6{
+        font-size: 0.9rem;
+    }
+    .more{
+        font-size: 1.1rem;
+        margin: 0.8rem;
+        padding: 0.8rem;
+    }
+}
 
 
